@@ -7,7 +7,22 @@ const Login=() => {
 
 
     const userLogin = (e) => {
-
+        e.preventDefault();
+        const userdata = {
+            username,
+            password,
+        } 
+        axios.post("http://localhost:90/admin/login", userdata)
+        .then(result =>{
+            if (result.data.token) {
+                localStorage.setItem("token", result.data.token);
+                console.log(result.data.token)
+                setmessage(result.data.message);
+            }
+            else{
+                setmessage(result.data.message);
+            }
+        })       
     }
     return(
         <div className="login-page bg-light">
@@ -20,6 +35,7 @@ const Login=() => {
                   <div className="col-md-6 pe-0">
                     <div className="form-left h-100 py-5 px-5 mx-xl-5 mx-md-0">
                       <form className="row g-4">
+                          dsds
                         <div className="col-12">
                           <label>
                             Username<span className="text-danger">*</span>
