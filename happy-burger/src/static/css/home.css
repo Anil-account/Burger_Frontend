@@ -1,0 +1,45 @@
+.back{
+    background-image: url("../images/default/burger-with-french-fries-facebook-cover.jpg")
+}
+
+.shopping-cart{
+    position: relative;
+    transform: scale(2,2);
+    display: inline-block;
+    color: grey;
+
+}
+
+.shopping-cart :hover{
+    color: #0d6efd;
+
+
+}
+
+.cart-number{
+    float: left;
+    position: relative;
+    margin-top:10px;
+    margin-left: -12px;
+    display: inline-flex;
+    color:rgb(135, 135, 37);
+    transform: scale(1.5,1.5);
+}
+
+.cart-number :hover{
+    color:rgb(175, 175, 69);
+}
+
+
+.feature{
+    display:block;
+}
+
+.card-style{
+    position:absolute;
+    top: 0vh;
+}
+
+.price{
+    color:#B12704;
+}
