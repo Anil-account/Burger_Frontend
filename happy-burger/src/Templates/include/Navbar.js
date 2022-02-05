@@ -32,20 +32,23 @@ class Navbar extends Component {
             Category
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <li><a className="dropdown-item" href="#">Chicken</a></li>
+            <li><a className="dropdown-item" href="#">Beef</a></li>
+            <li><a className="dropdown-item" href="#">Fish</a></li>
           </ul>
         </li>
 
           <li className="nav-item m-4 float-left" >
             <div className="shopping-cart">
-              <span className="fa fa-shopping-cart"></span>
+              <span className="fa fa-shopping-cart "></span>
+            <Link to="/viewcart" className="stretched-link cart-font">
+              <i className="fa fa-circle circle-cart"><span className="text-dark cart-text">3</span></i>
+            </Link>
             </div>
-            <span  className="mx-3">
-            <Link to="/menu">Cart</Link>
-            </span>
+
+          </li>
+          <li className="nav-item m-4">
+            <Link to="/">Profile</Link>
           </li>
         </ul>
       </div>
