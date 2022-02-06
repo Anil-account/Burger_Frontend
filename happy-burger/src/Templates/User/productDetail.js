@@ -45,10 +45,10 @@ const ProductDetail = () => {
             </p>
             <p className="fs-6 price">Price: </p>
 
-            <button href="#" className="card-link mx-3 btn btn-primary">
+            <Link to="/viewcart" href="#" className="card-link mx-3 btn btn-primary">
               <i className="fa fa-shopping-cart p-2 pt-0 pb-0"></i>
               Add to cart
-            </button>
+            </Link>
             <button href="#" className="card-link btn btn-primary">
               {/* <i className="fa fa-shopping-cart p-"></i> */}
               Order now

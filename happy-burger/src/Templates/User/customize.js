@@ -6,7 +6,7 @@ const Customize = () => {
           <h1 className="text-align-center text-primary fs-1 text-color-customization">Customize your desired burger</h1>
           <br className="p-3"></br>
           <form className="p-4 card">
-
+            <h2>Burger Name</h2>
             <div class="form-group row pb-4">
               <label for="inputEmail3" class="col-sm-2 col-form-label">
                 Bun
