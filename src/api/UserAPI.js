@@ -31,7 +31,7 @@ function UserAPI(token) {
 
 
     const addCart=async (product)=>{
-        if(!isLogged) return alert("Vui lòng đăng nhập trước khi mua!")
+        if(!isLogged) return alert("Please login to purchase item!")
 
         const check=cart.every(item=>{
             return item._id!==product._id
