@@ -67,7 +67,7 @@ function Cart() {
     }
 
     const payment=async ()=>{
-        const paymentID='PAYMENT-'+Math.floor(Math.random() * 1000000)+'VIET';
+        const paymentID='PAYMENT-'+Math.floor(Math.random() * 1000000)+'NEP';
         if(address!==''){
             await axios.post('/api/payment',{cart,paymentID,address},{
                 headers:{Authorization:token}
