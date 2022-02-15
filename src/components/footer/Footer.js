@@ -9,7 +9,8 @@ function Footer() {
                 <div className="footer-content-1 row">
                     <div className="footer-contact col-12 col-xl-5 d-flex flex-column align-items-center align-items-xl-start">
                         <div className="footer-logo">
-                            <img src={Logo} alt="" />
+                            {/* <img src={Logo} alt="" /> */}
+                            <img src={'https://images.vexels.com/media/users/3/158443/isolated/preview/c18e72479aefde6c1b5ec0039c866410-burger-logo-silhouette-by-vexels.png'} style={{filter: 'grayscale(1)'}}></img>
                         </div>
                         <div className="footer-phone">
                             <i className="fas fa-phone-volume"></i>
