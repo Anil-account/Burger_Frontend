@@ -195,7 +195,10 @@ function Header() {
           <div className="header-row2">
             <div className="header-logo">
               <Link to="/" onClick={() => setCategory("")}>
-                <img src={Logo} alt="" />
+                {/* <img src={Logo} alt="" /> */}
+                {/* <img src="https://www.burgerjointhtx.com/wp-content/uploads/2015/07/burger-icon-tight-white.png" style={{backgroundcolor: "white"}}></img> */}
+                <img src={'https://images.vexels.com/media/users/3/158443/isolated/preview/c18e72479aefde6c1b5ec0039c866410-burger-logo-silhouette-by-vexels.png'} style={{filter: 'brightness(0) invert(1)', height: '100%', color: 'white', }}></img>
+
               </Link>
             </div>
             <ul className="menu__list">
