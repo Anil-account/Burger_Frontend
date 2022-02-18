@@ -111,7 +111,7 @@ function Register() {
                 const oneLowerCase = /(?=.*[a-z])/
                 const oneUpperCase = /(?=.*[A-Z])/
                 const minCharater = /[a-zA-Z0-9]{8,}/;
-                if (!regexOneDigit.test(value)) return "Mật khẩu phải có ít nhất 1 sốPassword must have at least one digit!";
+                if (!regexOneDigit.test(value)) return "Password must have at least one digit!";
                 if (!oneLowerCase.test(value)) return "Password must contain at least one lowercase letter!";
                 if (!oneUpperCase.test(value)) return "Password must contain at least one upper case letter!";
                 if (!minCharater.test(value)) return "Password must contain more than 8 characters!";
