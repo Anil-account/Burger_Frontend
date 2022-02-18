@@ -146,6 +146,8 @@ function Register() {
         ]
     })
 
+    // <div>
+
     return (
         <div className="login">
             <h2>Register</h2>
