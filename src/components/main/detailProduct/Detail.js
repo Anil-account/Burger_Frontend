@@ -20,6 +20,7 @@ function Detail() {
   const [reviewCount, setReviewCount] = useState([]);
   const [callback, setCallback] = state.reviewsAPI.callBack;
 
+  //product rating 
   const ratingstar = ["Poor", "Fair", "Good", "Very good", "Excellent"];
 
   useEffect(() => {
@@ -46,11 +47,11 @@ function Detail() {
     e.preventDefault();
     let product_id = params.id;
     if (name === "" || email === "" || comment === "") {
-      alert("You need to enter enough information");
+      alert("please provide all information");
       return null;
     }
     if (rating === null) {
-      alert("You need to add rating");
+      alert("You need to provide rating");
       return null;
     }
     try {

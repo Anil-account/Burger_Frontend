@@ -52,7 +52,7 @@ function CreateProduct() {
             if(!isAdmin) return alert("Unauthorized access")
             const file=e.target.files[0]
             if(!file) return alert("File does not exist")
-            if(file.type!=='image/jpeg'&&file.type!=='image/png') return alert("File is not in the correct format")
+            if(file.type!=='image/jpeg'&&file.type!=='image/png') return alert("invalid file type")
             let formData=new FormData()
             formData.append('file',file)
 
