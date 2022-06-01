@@ -1,3 +1,5 @@
+// import react component
+
 import React, { useEffect, useState } from 'react';
 
 function getWindowDimensions() {

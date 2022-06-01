@@ -9,7 +9,7 @@ function LoadMore() {
     return (
         <div className="load-more">
             {
-                result<page*9?"":<button onClick={()=>setPage(page+1)}>Xem thêm</button>
+                result<page*9?"":<button onClick={()=>setPage(page+1)}>see more</button>
             }
         </div>
     );
